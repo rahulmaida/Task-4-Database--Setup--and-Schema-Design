@@ -1,0 +1,12 @@
+SELECT name, SUM(stock) AS total_stock
+FROM products
+GROUP BY name
+HAVING SUM(stock) > 100;
+SELECT name, AVG(price) AS average_price
+FROM products
+GROUP BY name
+HAVING AVG(price) > 500;
+SELECT name, COUNT(*) AS total_entries
+FROM products
+GROUP BY name
+HAVING COUNT(*) > 1;
