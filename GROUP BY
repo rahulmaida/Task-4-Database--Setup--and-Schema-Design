@@ -1,0 +1,9 @@
+SELECT name, COUNT(*) AS product_count
+FROM products
+GROUP BY name;
+SELECT name, SUM(stock) AS total_stock
+FROM products
+GROUP BY name;
+SELECT name, AVG(price) AS avg_price
+FROM products
+GROUP BY name;
